@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Marilou";
+
+    src: url("/css/Marilou.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #080808 !important;
+
+}
+
+.main {
+    background-image: url("/images/background_image.jpg");
+    background-position: right bottom;
+    background-attachment: fixed;
+    background-size: 70vw;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.container {
+    color: #ffffff;
+    ;
+}
+
+.brand_logo {
+    width: 130px;
+}
+
+
+
+.nav_text {
+    font-family: 'Marilou', Helvetica, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.navbar-nav li a {
+    color: #ffffff !important;
+}
+
+.large_title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 9em;
+    font-weight: 700;
+}
+
+.red_title {
+    color: #c52726;
+
+}
+
+.page_copy {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+
+}
+
+.btn {
+    border-radius: 100vh !important;
+    width: 41% !important;
+}
+
+.btn-outline-light {
+    border: 2.3px solid #ffffff !important;
+}
