@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home/Bykee</title>
-    <link rel="stylesheet" href="/css/index.css">
 
+    <!-- Default css -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,700&display=swap" rel="stylesheet">
 
+
+    <!-- Bootstrap Dependencies -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -22,60 +27,161 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,700&amp;display=swap&amp;_cacheOverride=1579730279018"
+        rel="stylesheet">
+
+    <!-- IcoFont -->
+    <link rel="stylesheet" href="css/icofont/icofont.min.css">
+
 </head>
 
 <body>
+
     <header id="header">
         <div class="container-fluid">
-            <nav id="nav-bar" class="navbar navbar-expand-sm navbar-dark">
+            <div class="row">
+                <div class="col-lg-12 col-12">
 
-                <img id="header-img" class="brand_logo"
-                    src="https://res.cloudinary.com/dvhndpbun/image/upload/v1579618788/landing_logo_upscaled_illustration_x4_ysyou1.png"
-                    alt="brand logo">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav nav_text">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FEEDBACK</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
-                        </li>
 
-                    </ul>
+                    <nav id="nav-bar" class="navbar navbar-expand-sm navbar-dark">
+
+                        <img id="header-img" class="brand_logo"
+                            src="https://res.cloudinary.com/dvhndpbun/image/upload/e_bgremoval/v1579618788/landing_logo_upscaled_illustration_x4_ysyou1.png"
+                            alt="brand logo">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto nav_padding nav_text">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SERVICE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FEEDBACK</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">CONTACT</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-            </nav>
+            </div>
         </div>
+
+        <nav id="sidebar" class="navbar navbar-expand-md navbar-dark sidebar_background_color fixed-right text-center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <a class="search_icon"><i class="icofont-search icofont-search_size"></i></a>
+
+                <ul class="navbar-nav icofont-ul">
+                    <li class="side_icon">
+                        <div class="vertical_line"></div>
+                    </li>
+                    <li class="side_icon">
+                        <a class="nav-link"><i
+                                class="icofont-paper-plane icofont-2x icofont_size round_background"></i></a>
+                    </li>
+                    <li class="side_icon">
+                        <a class="nav-link"><i
+                                class="icofont-facebook icofont-2x icofont_size round_background"></i></a>
+                    </li>
+                    <li class="no_pb">
+                        <a class="nav-link"><i class="icofont-twitter icofont-2x icofont_size round_background"></i></a>
+                    </li>
+                    <li class="side_icon">
+                        <div class="vertical_line"></div>
+                    </li>
+                </ul>
+                <a class="nav-link rect_background">
+                    <i class="icofont-simple-left"></i>
+                    <i class="icofont-simple-right"></i>
+                </a>
+            </div>
+        </nav>
     </header>
 
 
-    <main class="main">
+    <main class="main_section">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <h1 class=large_title>Bicycle <span class="red_title">Re</span>pair</h1>
-                    <!-- COPY = https://en.wikipedia.org/wiki/Copy_(written) -->
-                    <p class="page_copy">We don't just want you to love riding your bike, we want you to love working on
-                        your bike too. We
-                        are here to help you. </p>
+                <div class="col-lg-6 col-12">
+                    <span class="call2action">
+                        <h1 class="large_title">Bicycle <span class="red_title">Re</span>pair</h1>
+                        <!-- COPY = https://en.wikipedia.org/wiki/Copy_(written) -->
+                        <p class="page_copy">We don't just want you to love riding your bike, we want you to love
+                            working on
+                            your bike too. We
+                            are here to help you.
+                        </p>
 
-                    <button type="button" class="btn btn-outline-light btn-lg enroll_button">Enroll</button>
+
+                    </span>
                 </div>
 
+                <div class="col-lg-6 col-12 ">
+                    <img class="banner_image "
+                        src="https://res.cloudinary.com/dvhndpbun/image/upload/v1579805586/bike_background_azmev6.jpg"
+                        alt="iphone-mockup" />
+                </div>
+            </div>
+        </div>
 
 
 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <form id="form" class="enroll_form" action="https://www.freecodecamp.com/email-submit"
+                        method="POST">
+                        <div class="input-group">
+                            <button type="submit" class="btn btn-outline-light btn-lg enroll_button">Enroll</button>
+                            <input type="email" class="form-control text ml-2 form-control-lg"
+                                placeholder="Enter your email address" inputmode="email" id="email" name="email"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="">
+                        </div>
+                    </form>
+
+
+
+                    <div class="btn-toolbar" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-danger red_button mr-2">1</button>
+                        <button type="button" class="btn btn-secondary dark_button mx-2">2</button>
+                        <button type="button" class="btn btn-secondary dark_button mx-2">3</button>
+                        <button type="button" class="btn btn-secondary dark_button mx-2">4</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        </div>
     </main>
 
+
+    <footer>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+        </p>
+    </footer>
 
 </body>
 
