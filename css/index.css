@@ -1,54 +1,41 @@
 html {
     scroll-behavior: smooth;
-  }
-  
+}
 
 body {
     background-color: #080808fa !important;
     font-family: 'Montserrat Alternates', sans-serif !important;
     overflow-x: hidden !important;
-    
-
 }
 
-.fake_navbar{
+
+/* HEADER*/
+.fake_navbar {
     position: fixed;
     top: 0;
     display: none;
 }
 
+
+/* Navbar Styles */
+
 .container-fluid {
     padding: 0 5% 0 6% !important;
 }
 
-.main_section {
-    position: relative !important;
-}
-
-.main_section .container {
-    color: #ffffff;
-    margin-left: 5% !important;
-    /* position: absolute; */
-}
-
-.call2action * {
-    margin-top: 5%;
+.nav_padding {
+    padding-right: 7%
 }
 
 .brand_logo {
     width: 130px;
 }
 
-
-.nav_padding {
-    padding-right: 7%
-}
-
 .nav_text {
     color: #ffffff;
 }
 
-.nav_text:hover{
+.nav_text:hover {
     font-weight: 500;
 }
 
@@ -60,7 +47,9 @@ body {
     padding: 34px 25px 15px;
 }
 
-nav .hover_state::after{
+
+/* Red highlighter on nav links hover */
+nav .hover_state::after {
     content: "";
     display: block;
     height: 2px;
@@ -68,16 +57,57 @@ nav .hover_state::after{
     background-color: #c52726;
     margin: 2px 35% 0;
     transition: ease-in-out 300ms;
-
 }
 
-nav .hover_state:hover::after{
+nav .hover_state:hover::after {
     width: 40%;
 }
 
 
-/* ICONS */
+/* Sidebar Styles */
+#sidebar {
+    overflow-x: hidden !important;
+    overflow: hidden !important;
+}
 
+.item_padding {
+    padding: .5rem 2.5rem !important;
+}
+
+.sidebar_background_color {
+    background-color: #131315c4;
+}
+
+.navbar.fixed-right {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    z-index: 1 !important;
+}
+
+.top_vertical_line {
+    border-left: 2px solid #494a4985;
+    height: 9.4vw;
+    position: relative;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 2.7vw;
+    top: 0;
+}
+
+.bottom_vertical_line {
+    border-left: 2px solid #494a4985;
+    height: 9.4vw;
+    position: relative;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 22%;
+    margin-bottom: 2.7vw;
+    top: 0;
+}
+
+
+/* Sidebar Icon/Components Styles */
 .icofont-search_size {
     font-size: 1.45em !important;
     color: #fff;
@@ -103,14 +133,16 @@ nav .hover_state:hover::after{
     border-radius: 100vh;
     border: 1px solid #6767678c;
     text-align: center;
-    line-height: 100px;
     vertical-align: middle;
     padding: 9px;
 }
 
+.round_background:hover {
+    border: 1px solid #918e8e;
+}
+
 .rect_background i {
     vertical-align: -10%;
-
 }
 
 .rect_background {
@@ -122,6 +154,22 @@ nav .hover_state:hover::after{
 
 .navbar:not(.rect_background) {
     padding: 0 !important;
+}
+
+
+/* MAIN SECTION Styles */
+.main_section {
+    position: relative !important;
+}
+
+.main_section .container {
+    color: #ffffff;
+    margin-left: 5% !important;
+
+}
+
+.call2action * {
+    margin-top: 5%;
 }
 
 .large_title {
@@ -147,7 +195,6 @@ nav .hover_state:hover::after{
     left: -54.2%;
     transform: scale(1) translate(0px, 40px);
     width: 74vw;
-    
 }
 
 .enroll_form {
@@ -175,7 +222,7 @@ input[type="email"] {
     font-size: 1vw !important;
 }
 
-.form-control::-moz-placeholder  {
+.form-control::-moz-placeholder {
     color: #FFFFFF !important;
     font-size: 1vw !important;
 }
@@ -215,7 +262,9 @@ input[type="email"] {
     border-color: #282828;
 }
 
-.jumbotron{
+
+/* Services & Iframe Container Styles */
+.jumbotron {
     background-color: #FAF8FF !important;
     color: #003254 !important;
     z-index: 2;
@@ -223,18 +272,16 @@ input[type="email"] {
     margin-bottom: 0 !important;
 }
 
-.lead{
+.lead {
     padding: 0 14%;
 }
 
-.iframe_shadow{
-box-shadow: 1px 4px 9px 4px rgba(0,0,0,0.41);
+.iframe_shadow {
+    box-shadow: 1px 4px 9px 4px rgba(0, 0, 0, 0.41);
 }
 
-/* .iframe_margin {
-    margin: 10%;
-} */
 
+/* Footer Styles */
 footer {
     color: #ffffff;
     background-color: #030303;
@@ -243,94 +290,29 @@ footer {
     overflow: hidden;
     position: relative;
     z-index: 1;
-    
 }
-
-
-/* @media screen and (min-width: 991px) {
-      html {
-          font-size: calc(0.2rem + 0.28 * ((100vw - 20rem) / 30));
-  
-      }
-  } */
-
-
-/*Sidebar*/
-
-
-#sidebar {
-    overflow-x: hidden !important;
-    position: absolute !important;
-    overflow: hidden !important;
-}
-
-.item_padding {
-    padding: .5rem 2.5rem !important;
-
-}
-
-.sidebar_background_color {
-    background-color: #131315c4;
-}
-
- .navbar.fixed-right {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    
-} 
-
-.top_vertical_line {
-    border-left: 2px solid #494a4985;
-    height: 9.4vw;
-    position: relative;
-    left: 50%;
-    margin-left: -3px;
-    margin-top: 2.7vw;
-    top: 0;
-}
-
-.bottom_vertical_line {
-    border-left: 2px solid #494a4985;
-    height: 9.4vw;
-    position: relative;
-    left: 50%;
-    margin-left: -3px;
-    margin-top: 22%;
-    margin-bottom: 2.7vw;
-    top: 0;
-}
-
-
 
 
 /* MEDIA QUERIES */
-
 @media (max-width:1057px) {
+    #sidebar {
+        display: none;
+    }
 
-#sidebar {
-    display: none;
-}
-.nav_padding {
-    padding-right: 0;
-}
+    .nav_padding {
+        padding-right: 0;
+    }
 
-.nav-item {
-    padding: 25px 16px 15px;
+    .nav-item {
+        padding: 25px 16px 15px;
+    }
 }
-
-}
-
 
 
 @media (max-width:991px) {
-
     .nav-item {
         padding: 25px 7px 15px;
     }
-    
 
     .large_title {
         font-size: 10vw;
@@ -347,39 +329,36 @@ footer {
     .banner_image {
         left: -115.2%;
         width: 99vw;
-        
     }
 
     .enroll_form {
         width: 105%;
         margin-bottom: 25%
     }
-    
+
     .enroll_button {
         font-size: .9rem !important;
         line-height: 1 !important;
-         width: 30% !important;
+        width: 30% !important;
     }
 
-    
     .form-control::-webkit-input-placeholder {
         font-size: .75rem !important;
     }
 
-    .form-control::-moz-placeholder  {
+    .form-control::-moz-placeholder {
         font-size: .75rem !important;
     }
-
-
 
     .btn-toolbar .btn {
         width: 11%;
     }
-
 }
 
 
-@media (max-width:575px){
+
+@media (max-width:575px) {
+
 
     .brand_logo {
         padding-top: 5%;
@@ -388,40 +367,41 @@ footer {
 
     .navbar-toggler-icon {
         width: 1.1em !important;
-      } 
-      .navbar-toggler {
+    }
+
+    .navbar-toggler {
         padding: 0px 3px !important;
-      }
+    }
 
     .nav-item {
         padding: 0;
         font-size: .8rem;
     }
 
-    nav .hover_state:hover::after{
+    nav .hover_state:hover::after {
         width: 6%;
     }
 
-    .banner_image{
+    .banner_image {
         display: none;
     }
 
-    .mob_image_container{
+    .mob_image_container {
         background-image: url("https://res.cloudinary.com/dvhndpbun/image/upload/v1579805586/bike_background_azmev6.jpg");
         background-size: cover;
         padding-top: 2vh;
-        padding-bottom:35vh;
+        padding-bottom: 35vh;
         border-radius: 0 0 30px 30px;
-        box-shadow: -1px 11px 14px -15px rgba(219,212,219,0.75);
+        box-shadow: -1px 11px 14px -15px rgba(219, 212, 219, 0.75);
     }
 
-    .title_container{
+    .title_container {
         padding: 0 5% !important;
     }
+
     .main_section .container {
         color: #ffffff;
-         margin-left: 0 !important;
-        
+        margin-left: 0 !important;
     }
 
     .large_title {
@@ -437,7 +417,6 @@ footer {
         margin-bottom: 10%;
     }
 
-   
     .enroll_form {
         width: 97%;
         margin-bottom: 5%;
@@ -446,21 +425,20 @@ footer {
     }
 
     input[type="email"] {
-       margin-left: 0 !important;
+        margin-left: 0 !important;
     }
 
     .btn-toolbar {
         margin-bottom: 4%;
         margin-left: 59%;
-        
     }
+
     .btn-toolbar .btn {
         width: 8%;
         padding: 0 .10rem;
         margin-right: .2rem !important;
     }
 
-    
     .display-4 {
         font-size: 1.6rem !important;
         font-weight: 400 !important;
@@ -474,40 +452,31 @@ footer {
         padding: 0 0;
     }
 
-    .youtube_iframe{
+    .youtube_iframe {
         flex: 0 0 100% !important;
         max-width: 100% !important;
         margin-left: 0 !important;
     }
 
-footer{
-    padding: 0;
-}
-
-footer p{
-    font-size: .9rem;
-
-}
-
+    footer {
+        padding: 0;
     }
 
+    footer p {
+        font-size: .9rem;
+    }
+}
 
 
 /* Disable mobile banner image on larger screens */
-
-@media (min-width:575px){
-    .mobile_banner_image{
+@media (min-width:575px) {
+    .mobile_banner_image {
         display: none;
     }
 }
 
 
-
-
-
-
 /* Sidebar Media Queries */
-
 @media (min-width:1057px) {
     .navbar.fixed-right {
         bottom: 0;
