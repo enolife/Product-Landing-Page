@@ -56,6 +56,7 @@ nav .hover_state::after {
     width: 0;
     background-color: #c52726;
     margin: 2px 35% 0;
+    -webkit-transition: ease-in-out 300ms;
     transition: ease-in-out 300ms;
 }
 
@@ -193,6 +194,7 @@ nav .hover_state:hover::after {
     position: absolute;
     z-index: -3;
     left: -54.2%;
+    -webkit-transform: scale(1) translate(0px, 40px);
     transform: scale(1) translate(0px, 40px);
     width: 74vw;
 }
@@ -453,6 +455,7 @@ footer {
     }
 
     .youtube_iframe {
+        -webkit-box-flex: 0 !important;
         flex: 0 0 100% !important;
         max-width: 100% !important;
         margin-left: 0 !important;
@@ -480,17 +483,25 @@ footer {
 @media (min-width:1057px) {
     .navbar.fixed-right {
         bottom: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         flex-flow: column nowrap;
+        -webkit-box-align: start;
         align-items: flex-start
     }
 
     .navbar.fixed-right .navbar-collapse {
+        -webkit-box-flex: 0;
         flex-grow: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         flex-direction: column;
         width: 100%
     }
 
     .navbar.fixed-right .navbar-collapse .navbar-nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         flex-direction: column;
         width: 100%
     }
