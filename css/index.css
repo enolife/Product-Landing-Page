@@ -256,12 +256,14 @@ input[type="email"] {
     color: #fff;
     background-color: #c52726;
     border-color: #c52726;
+    border-radius: 8px;
 }
 
 .btn-secondary.dark_button {
     color: #fff;
     background-color: #282828;
     border-color: #282828;
+    border-radius: 8px;
 }
 
 
