@@ -462,6 +462,15 @@ footer {
         border-radius: 6px;
     }
 
+    .btn-danger.red_button:hover {
+        padding-top: 0px;
+    }
+
+    .btn-secondary.dark_button:hover {
+        padding-top: 0px;
+    }
+
+
     .display-4 {
         font-size: 1.6rem;
         font-weight: 400;
