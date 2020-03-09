@@ -397,6 +397,11 @@ footer {
         padding: 0px 3px;
     }
 
+    .navbar-toggler:focus {
+        outline: 1px dotted #ee3838;
+    }
+
+
     .nav-item {
         padding: 0;
         font-size: .8rem;
