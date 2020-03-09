@@ -5,13 +5,11 @@ html {
 body {
     font-family: 'Montserrat Alternates', sans-serif;
     overflow-x: hidden;
+    /* Fallback for Ucbrowser */
+    background-color: #080808;
+    /* Other Browsers */
+    background-color: #080808fa;
 }
-
-#header,
-.main_section {
-    background-color: #080808fa
-}
-
 
 /* HEADER*/
 .fake_navbar {
@@ -423,6 +421,10 @@ footer {
 
     .title_container {
         padding: 0 5%;
+    }
+
+    .main_section {
+        overflow-x: hidden;
     }
 
     .main_section .container {
